@@ -35,7 +35,26 @@ namespace lab1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Tabul tabul = new Tabul();
+            double Xn, Xk, h, a;
 
+            Xn = Convert.ToDouble(this.textBox_Xn.Text);
+            Xk = Convert.ToDouble(this.textBox_Xk.Text);
+            h = Convert.ToDouble(this.textBox_h.Text.Replace('.', ','));
+            a = Convert.ToDouble(this.textBox_a.Text);
+
+            dataGridView1.Rows.Clear();
+            chart1.Series[0].Points.Clear();
+            tabul.Tabulate(Xn, Xk, h, a);
+
+            for (int i = 0; i < tabul.n; i++)
+            {
+                dataGridView1.Rows.Add(
+                    Math.Round(tabul.xy[i, 0], 2).ToString(),
+                    Math.Round(tabul.xy[i, 1], 3).ToString()
+                );
+                chart1.Series[0].Points.AddXY(tabul.xy[i, 0], tabul.xy[i, 1]);
+            }   
         }
     }
 }

@@ -42,6 +42,8 @@
             button_evaluate = new Button();
             dataGridView1 = new DataGridView();
             chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            x = new DataGridViewTextBoxColumn();
+            y = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             SuspendLayout();
@@ -127,6 +129,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { x, y });
             dataGridView1.Location = new Point(12, 56);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(238, 368);
@@ -141,12 +144,23 @@
             chart1.Location = new Point(319, 57);
             chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chart1.Series.Add(series1);
             chart1.Size = new Size(469, 367);
             chart1.TabIndex = 11;
             chart1.Text = "chart1";
+            // 
+            // x
+            // 
+            x.HeaderText = "x";
+            x.Name = "x";
+            // 
+            // y
+            // 
+            y.HeaderText = "y";
+            y.Name = "y";
             // 
             // Form1
             // 
@@ -186,5 +200,7 @@
         private Button button_evaluate;
         private DataGridView dataGridView1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private DataGridViewTextBoxColumn x;
+        private DataGridViewTextBoxColumn y;
     }
 }
