@@ -64,24 +64,24 @@
             label_rows.AutoSize = true;
             label_rows.Location = new Point(16, 246);
             label_rows.Name = "label_rows";
-            label_rows.Size = new Size(39, 15);
+            label_rows.Size = new Size(152, 15);
             label_rows.TabIndex = 2;
-            label_rows.Text = "Рядки";
-            label_rows.Click += this.label_rows_Click;
+            label_rows.Text = "Рядки(від 1 до 3 включно )";
+            label_rows.Click += label_rows_Click;
             // 
             // labe_rows
             // 
             labe_rows.AutoSize = true;
-            labe_rows.Location = new Point(184, 249);
+            labe_rows.Location = new Point(280, 249);
             labe_rows.Name = "labe_rows";
-            labe_rows.Size = new Size(50, 15);
+            labe_rows.Size = new Size(166, 15);
             labe_rows.TabIndex = 3;
-            labe_rows.Text = "Стовпці";
+            labe_rows.Text = "Стовпці(від 1 до 15 включно)";
             labe_rows.Click += label2_Click;
             // 
             // textBox_rows
             // 
-            textBox_rows.Location = new Point(72, 246);
+            textBox_rows.Location = new Point(174, 243);
             textBox_rows.Name = "textBox_rows";
             textBox_rows.Size = new Size(100, 23);
             textBox_rows.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             // textBox_cols
             // 
-            textBox_cols.Location = new Point(240, 246);
+            textBox_cols.Location = new Point(452, 246);
             textBox_cols.Name = "textBox_cols";
             textBox_cols.Size = new Size(100, 23);
             textBox_cols.TabIndex = 5;
@@ -114,6 +114,7 @@
             button_find_duplicate.TabIndex = 7;
             button_find_duplicate.Text = "Найти дублікат";
             button_find_duplicate.UseVisualStyleBackColor = true;
+            button_find_duplicate.Click += button_find_duplicate_Click;
             // 
             // label1
             // 

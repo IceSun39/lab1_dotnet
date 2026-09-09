@@ -14,6 +14,8 @@ namespace lab1
     public partial class Form_twodimen_array : Form
     {
 
+        findDuplicate fd = new findDuplicate();
+
         public Form_twodimen_array()
         {
             InitializeComponent();
@@ -36,6 +38,10 @@ namespace lab1
 
         }
 
+        private void label_rows_Click(object sender, EventArgs e)
+        {
+        }
+
         private void Form_twodimen_array_Load(object sender, EventArgs e)
         {
 
@@ -43,8 +49,7 @@ namespace lab1
 
         private void button_draw_matrix_Click(object sender, EventArgs e)
         {
-            findDuplicate fd = new findDuplicate();
-
+            dataGridView1.Rows.Clear();
             fd.Rows = int.Parse(textBox_rows.Text);
             fd.Cols = int.Parse(textBox_cols.Text);
 
@@ -59,11 +64,20 @@ namespace lab1
                     dataGridView1.Rows[i].Cells[j].Value = fd.array[i, j];
                 }
             }
+            label_result.Text = "";
         }
 
         private void textBox_rows_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_find_duplicate_Click(object sender, EventArgs e)
+        {
+            var (index00, index01, index10, index11) = fd.findDuplicateInArray();
+            dataGridView1.Rows[index00].Cells[index01].Style.BackColor = Color.Red;
+            dataGridView1.Rows[index10].Cells[index11].Style.BackColor = Color.Red;
+            label_result.Text = $"Дублікати знайдено: ({index00}, {index01}) та ({index10}, {index11})";
         }
     }
 }

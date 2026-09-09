@@ -143,6 +143,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(238, 368);
             dataGridView1.TabIndex = 10;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // x
             // 
@@ -170,6 +171,7 @@
             chart1.Size = new Size(469, 367);
             chart1.TabIndex = 11;
             chart1.Text = "chart1";
+            chart1.Click += chart1_Click;
             // 
             // menuStrip1
             // 
