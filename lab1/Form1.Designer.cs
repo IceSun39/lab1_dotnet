@@ -41,9 +41,9 @@
             textBox_Xk = new TextBox();
             button_evaluate = new Button();
             dataGridView1 = new DataGridView();
-            chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             x = new DataGridViewTextBoxColumn();
             y = new DataGridViewTextBoxColumn();
+            chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             SuspendLayout();
@@ -94,6 +94,7 @@
             textBox_Xn.Name = "textBox_Xn";
             textBox_Xn.Size = new Size(55, 23);
             textBox_Xn.TabIndex = 5;
+            textBox_Xn.Text = "-5.55";
             // 
             // textBox_a
             // 
@@ -101,6 +102,7 @@
             textBox_a.Name = "textBox_a";
             textBox_a.Size = new Size(55, 23);
             textBox_a.TabIndex = 6;
+            textBox_a.Text = "5";
             // 
             // textBox_h
             // 
@@ -108,6 +110,7 @@
             textBox_h.Name = "textBox_h";
             textBox_h.Size = new Size(55, 23);
             textBox_h.TabIndex = 7;
+            textBox_h.Text = "0.1";
             // 
             // textBox_Xk
             // 
@@ -115,6 +118,7 @@
             textBox_Xk.Name = "textBox_Xk";
             textBox_Xk.Size = new Size(55, 23);
             textBox_Xk.TabIndex = 8;
+            textBox_Xk.Text = "10.33";
             // 
             // button_evaluate
             // 
@@ -135,6 +139,16 @@
             dataGridView1.Size = new Size(238, 368);
             dataGridView1.TabIndex = 10;
             // 
+            // x
+            // 
+            x.HeaderText = "x";
+            x.Name = "x";
+            // 
+            // y
+            // 
+            y.HeaderText = "y";
+            y.Name = "y";
+            // 
             // chart1
             // 
             chartArea1.Name = "ChartArea1";
@@ -151,16 +165,6 @@
             chart1.Size = new Size(469, 367);
             chart1.TabIndex = 11;
             chart1.Text = "chart1";
-            // 
-            // x
-            // 
-            x.HeaderText = "x";
-            x.Name = "x";
-            // 
-            // y
-            // 
-            y.HeaderText = "y";
-            y.Name = "y";
             // 
             // Form1
             // 

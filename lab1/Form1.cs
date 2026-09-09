@@ -38,10 +38,16 @@ namespace lab1
             Tabul tabul = new Tabul();
             double Xn, Xk, h, a;
 
-            Xn = Convert.ToDouble(this.textBox_Xn.Text);
-            Xk = Convert.ToDouble(this.textBox_Xk.Text);
+            Xn = Convert.ToDouble(this.textBox_Xn.Text.Replace('.', ','));
+            Xk = Convert.ToDouble(this.textBox_Xk.Text.Replace('.', ','));
             h = Convert.ToDouble(this.textBox_h.Text.Replace('.', ','));
-            a = Convert.ToDouble(this.textBox_a.Text);
+            a = Convert.ToDouble(this.textBox_a.Text.Replace('.', ','));
+
+            if (h <= 0)
+            {
+                MessageBox.Show("Крок повинен бути більше нуля!", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             dataGridView1.Rows.Clear();
             chart1.Series[0].Points.Clear();
