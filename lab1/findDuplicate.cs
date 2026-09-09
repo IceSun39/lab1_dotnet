@@ -24,43 +24,55 @@ namespace lab1
             set { cols = 0 <= value && value <= 15 ? value : cols; }
         }
 
-        void generateRandomArray(int[,] array)
+        public void generateRandomArray()
         {
-            // Заповнюємо випадковими значеннями на одне числ менеше ніж потрібно
-            HashSet<int> allNumbers = new HashSet<int>();
+            array = new int[rows, cols];
+
+            List<int> allNumbers = new List<int>();
             Random random = new Random();
+
             int totalNumbers = rows * cols;
+
             while (allNumbers.Count < totalNumbers - 1)
             {
                 int randomNumber = random.Next(1, 100);
-                allNumbers.Add(randomNumber);
+
+                if (!allNumbers.Contains(randomNumber))
+                {
+                    allNumbers.Add(randomNumber);
+                }
             }
 
-            // Додаємо одне випадкове число, яке вже є в наборі
-            allNumbers.Add(allNumbers.ElementAt(random.Next(0, allNumbers.Count)));
-            random.Shuffle(allNumbers.ToArray());
+            // Додаємо дубль
+            int duplicate = allNumbers[random.Next(allNumbers.Count)];
+            allNumbers.Add(duplicate);
 
-            // Заповнюємо масив числами з набору
+            
+            int[] numbers = allNumbers.ToArray();
+            random.Shuffle(numbers);
+
+            // Заповнюємо матрицю
             int index = 0;
-            foreach (int number in allNumbers)
+
+            foreach (int number in numbers)
             {
                 array[index / cols, index % cols] = number;
                 index++;
             }
         }
 
-        (int, int, int, int) findDuplicateInArray(int[,] array)
+        public (int, int, int, int) findDuplicateInArray()
         {
             Hashtable seen = new Hashtable();
 
-            int rows = array.GetLength(0);
-            int cols = array.GetLength(1);
+            int rows = this.array.GetLength(0);
+            int cols = this.array.GetLength(1);
 
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    int currentValue = array[i, j];
+                    int currentValue = this.array[i, j];
 
                     if (seen.ContainsKey(currentValue))
                     {

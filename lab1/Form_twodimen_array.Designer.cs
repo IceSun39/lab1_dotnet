@@ -56,22 +56,23 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(355, 373);
+            dataGridView1.Size = new Size(776, 217);
             dataGridView1.TabIndex = 1;
             // 
             // label_rows
             // 
             label_rows.AutoSize = true;
-            label_rows.Location = new Point(387, 37);
+            label_rows.Location = new Point(16, 246);
             label_rows.Name = "label_rows";
             label_rows.Size = new Size(39, 15);
             label_rows.TabIndex = 2;
             label_rows.Text = "Рядки";
+            label_rows.Click += this.label_rows_Click;
             // 
             // labe_rows
             // 
             labe_rows.AutoSize = true;
-            labe_rows.Location = new Point(387, 82);
+            labe_rows.Location = new Point(184, 249);
             labe_rows.Name = "labe_rows";
             labe_rows.Size = new Size(50, 15);
             labe_rows.TabIndex = 3;
@@ -80,15 +81,16 @@
             // 
             // textBox_rows
             // 
-            textBox_rows.Location = new Point(443, 37);
+            textBox_rows.Location = new Point(72, 246);
             textBox_rows.Name = "textBox_rows";
             textBox_rows.Size = new Size(100, 23);
             textBox_rows.TabIndex = 4;
             textBox_rows.Text = "3";
+            textBox_rows.TextChanged += textBox_rows_TextChanged;
             // 
             // textBox_cols
             // 
-            textBox_cols.Location = new Point(443, 79);
+            textBox_cols.Location = new Point(240, 246);
             textBox_cols.Name = "textBox_cols";
             textBox_cols.Size = new Size(100, 23);
             textBox_cols.TabIndex = 5;
@@ -96,16 +98,17 @@
             // 
             // button_draw_matrix
             // 
-            button_draw_matrix.Location = new Point(387, 125);
+            button_draw_matrix.Location = new Point(20, 275);
             button_draw_matrix.Name = "button_draw_matrix";
             button_draw_matrix.Size = new Size(75, 23);
             button_draw_matrix.TabIndex = 6;
             button_draw_matrix.Text = "Оновити масив";
             button_draw_matrix.UseVisualStyleBackColor = true;
+            button_draw_matrix.Click += button_draw_matrix_Click;
             // 
             // button_find_duplicate
             // 
-            button_find_duplicate.Location = new Point(480, 125);
+            button_find_duplicate.Location = new Point(113, 275);
             button_find_duplicate.Name = "button_find_duplicate";
             button_find_duplicate.Size = new Size(131, 23);
             button_find_duplicate.TabIndex = 7;
@@ -115,7 +118,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(387, 172);
+            label1.Location = new Point(20, 315);
             label1.Name = "label1";
             label1.Size = new Size(63, 15);
             label1.TabIndex = 8;
@@ -124,7 +127,7 @@
             // label_result
             // 
             label_result.AutoSize = true;
-            label_result.Location = new Point(456, 172);
+            label_result.Location = new Point(95, 315);
             label_result.Name = "label_result";
             label_result.Size = new Size(0, 15);
             label_result.TabIndex = 9;
