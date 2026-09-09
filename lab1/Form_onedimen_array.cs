@@ -23,5 +23,29 @@ namespace lab1
             f.Show();
             this.Close();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            CalcFreeDrop calc = new CalcFreeDrop();
+            int t = 0;
+
+            t = Convert.ToInt32(textBox_time.Text);
+            calc.Calculate(t); 
+
+            for(int i = 0; i < calc.n; i++)
+            {
+                dataGridView1.Rows.Add(
+                    i + 1,
+                    Math.Round(calc.distances[i],2)
+                    );
+            }
+
+        }
     }
 }
