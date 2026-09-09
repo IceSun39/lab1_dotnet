@@ -28,12 +28,163 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            label_Xn = new Label();
+            label_Xk = new Label();
+            label_h = new Label();
+            label_a = new Label();
+            textBox_Xn = new TextBox();
+            textBox_a = new TextBox();
+            textBox_h = new TextBox();
+            textBox_Xk = new TextBox();
+            button_evaluate = new Button();
+            dataGridView1 = new DataGridView();
+            chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
+            SuspendLayout();
+            // 
+            // label_Xn
+            // 
+            label_Xn.AutoSize = true;
+            label_Xn.Location = new Point(12, 9);
+            label_Xn.Name = "label_Xn";
+            label_Xn.Size = new Size(21, 15);
+            label_Xn.TabIndex = 0;
+            label_Xn.Text = "Xn";
+            label_Xn.Click += label1_Click;
+            // 
+            // label_Xk
+            // 
+            label_Xk.AutoSize = true;
+            label_Xk.Location = new Point(73, 9);
+            label_Xk.Name = "label_Xk";
+            label_Xk.Size = new Size(20, 15);
+            label_Xk.TabIndex = 1;
+            label_Xk.Text = "Xk";
+            label_Xk.Click += label2_Click;
+            // 
+            // label_h
+            // 
+            label_h.AutoSize = true;
+            label_h.Location = new Point(134, 9);
+            label_h.Name = "label_h";
+            label_h.Size = new Size(14, 15);
+            label_h.TabIndex = 2;
+            label_h.Text = "h";
+            label_h.Click += label1_Click_1;
+            // 
+            // label_a
+            // 
+            label_a.AutoSize = true;
+            label_a.Location = new Point(195, 9);
+            label_a.Name = "label_a";
+            label_a.Size = new Size(13, 15);
+            label_a.TabIndex = 3;
+            label_a.Text = "a";
+            label_a.Click += label1_Click_2;
+            // 
+            // textBox_Xn
+            // 
+            textBox_Xn.Location = new Point(12, 27);
+            textBox_Xn.Name = "textBox_Xn";
+            textBox_Xn.Size = new Size(55, 23);
+            textBox_Xn.TabIndex = 5;
+            // 
+            // textBox_a
+            // 
+            textBox_a.Location = new Point(195, 27);
+            textBox_a.Name = "textBox_a";
+            textBox_a.Size = new Size(55, 23);
+            textBox_a.TabIndex = 6;
+            // 
+            // textBox_h
+            // 
+            textBox_h.Location = new Point(134, 27);
+            textBox_h.Name = "textBox_h";
+            textBox_h.Size = new Size(55, 23);
+            textBox_h.TabIndex = 7;
+            // 
+            // textBox_Xk
+            // 
+            textBox_Xk.Location = new Point(73, 27);
+            textBox_Xk.Name = "textBox_Xk";
+            textBox_Xk.Size = new Size(55, 23);
+            textBox_Xk.TabIndex = 8;
+            // 
+            // button_evaluate
+            // 
+            button_evaluate.Location = new Point(319, 27);
+            button_evaluate.Name = "button_evaluate";
+            button_evaluate.Size = new Size(99, 24);
+            button_evaluate.TabIndex = 9;
+            button_evaluate.Text = "Розрахувати";
+            button_evaluate.UseVisualStyleBackColor = true;
+            button_evaluate.Click += button1_Click;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 56);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(238, 368);
+            dataGridView1.TabIndex = 10;
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chart1.Legends.Add(legend1);
+            chart1.Location = new Point(319, 57);
+            chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chart1.Series.Add(series1);
+            chart1.Size = new Size(469, 367);
+            chart1.TabIndex = 11;
+            chart1.Text = "chart1";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(chart1);
+            Controls.Add(dataGridView1);
+            Controls.Add(button_evaluate);
+            Controls.Add(textBox_Xk);
+            Controls.Add(textBox_h);
+            Controls.Add(textBox_a);
+            Controls.Add(textBox_Xn);
+            Controls.Add(label_a);
+            Controls.Add(label_h);
+            Controls.Add(label_Xk);
+            Controls.Add(label_Xn);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label_Xn;
+        private Label label_Xk;
+        private Label label_h;
+        private Label label_a;
+        private TextBox textBox_Xn;
+        private TextBox textBox_a;
+        private TextBox textBox_h;
+        private TextBox textBox_Xk;
+        private Button button_evaluate;
+        private DataGridView dataGridView1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
