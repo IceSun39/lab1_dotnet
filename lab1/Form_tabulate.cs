@@ -1,8 +1,8 @@
 namespace lab1
 {
-    public partial class Form1 : Form
+    public partial class Form_tabulate : Form
     {
-        public Form1()
+        public Form_tabulate()
         {
             InitializeComponent();
         }
@@ -60,7 +60,26 @@ namespace lab1
                     Math.Round(tabul.xy[i, 1], 3).ToString()
                 );
                 chart1.Series[0].Points.AddXY(tabul.xy[i, 0], tabul.xy[i, 1]);
-            }   
+            }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Ó‰ÌÓ‚ËÏ≥Ì≥Ã‡ÒË‚ËToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_onedimen_array f = new Form_onedimen_array();
+            f.Show();
+            this.Hide();
+        }
+
+        private void ‰‚Ó‚ËÏ≥Ì≥Ã‡ÒË‚ËToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_twodimen_array f = new Form_twodimen_array();
+            f.Show();
+            this.Hide();
         }
     }
 }
