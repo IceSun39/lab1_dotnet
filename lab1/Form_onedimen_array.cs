@@ -36,15 +36,25 @@ namespace lab1
             int t = 0;
 
             t = Convert.ToInt32(textBox_time.Text);
-            calc.Calculate(t); 
+            if (t <= 0)
+            {
+                MessageBox.Show("Час має бути додатнім числом.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            calc.Calculate(t);
 
-            for(int i = 0; i < calc.n; i++)
+            for (int i = 0; i < calc.n; i++)
             {
                 dataGridView1.Rows.Add(
                     i + 1,
-                    Math.Round(calc.distances[i],2)
+                    Math.Round(calc.distances[i], 2)
                     );
             }
+
+        }
+
+        private void Form_onedimen_array_Load(object sender, EventArgs e)
+        {
 
         }
     }

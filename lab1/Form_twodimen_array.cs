@@ -50,8 +50,20 @@ namespace lab1
         private void button_draw_matrix_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
-            fd.Rows = int.Parse(textBox_rows.Text);
-            fd.Cols = int.Parse(textBox_cols.Text);
+            fd.Rows = Convert.ToInt32(textBox_rows.Text);
+            fd.Cols = Convert.ToInt32(textBox_cols.Text);
+
+            if( fd.Rows <= 0 || fd.Rows > 3)
+            {
+                MessageBox.Show("Кількість рядків повинна бути від 1 до 3!", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (fd.Cols <= 0 || fd.Cols > 15)
+            {
+                MessageBox.Show("Кількість стовпців повинна бути від 1 до 15!", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             fd.generateRandomArray();
 
@@ -67,11 +79,7 @@ namespace lab1
             label_result.Text = "";
         }
 
-        private void textBox_rows_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void button_find_duplicate_Click(object sender, EventArgs e)
         {
             var (index00, index01, index10, index11) = fd.findDuplicateInArray();

@@ -86,7 +86,6 @@
             textBox_rows.Size = new Size(100, 23);
             textBox_rows.TabIndex = 4;
             textBox_rows.Text = "3";
-            textBox_rows.TextChanged += textBox_rows_TextChanged;
             // 
             // textBox_cols
             // 
@@ -100,7 +99,7 @@
             // 
             button_draw_matrix.Location = new Point(20, 275);
             button_draw_matrix.Name = "button_draw_matrix";
-            button_draw_matrix.Size = new Size(75, 23);
+            button_draw_matrix.Size = new Size(107, 23);
             button_draw_matrix.TabIndex = 6;
             button_draw_matrix.Text = "Оновити масив";
             button_draw_matrix.UseVisualStyleBackColor = true;
@@ -108,7 +107,7 @@
             // 
             // button_find_duplicate
             // 
-            button_find_duplicate.Location = new Point(113, 275);
+            button_find_duplicate.Location = new Point(143, 275);
             button_find_duplicate.Name = "button_find_duplicate";
             button_find_duplicate.Size = new Size(131, 23);
             button_find_duplicate.TabIndex = 7;
@@ -150,7 +149,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(button_close);
             Name = "Form_twodimen_array";
-            Text = "Form_twodimen_array";
+            Text = "Двовимірні масиви";
             Load += Form_twodimen_array_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

@@ -222,8 +222,8 @@
             Controls.Add(label_Xn);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form_tabulate";
-            Text = "Form1";
+            Name = "Табуляція функції";
+            Text = "Табуляція функції";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)chart1).EndInit();

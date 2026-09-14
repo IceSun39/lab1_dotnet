@@ -116,8 +116,8 @@
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(button_close);
-            Name = "Form_onedimen_array";
-            Text = "Form_onedimen_array";
+            Name = "Одновимірні масиви";
+            Text = "Одновимірні масиви";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
