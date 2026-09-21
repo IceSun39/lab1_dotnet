@@ -30,6 +30,7 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            returnToFirstLab = new Button();
             countButton = new Button();
             countLabel = new Label();
             label6 = new Label();
@@ -40,12 +41,15 @@
             label8 = new Label();
             label9 = new Label();
             tabPage2 = new TabPage();
-            tabPage3 = new TabPage();
-            label1 = new Label();
-            label2 = new Label();
-            textBox_leftBoundary = new TextBox();
+            sumButton = new Button();
+            button1 = new Button();
+            sumLabel = new Label();
+            label3 = new Label();
             textBox_rigthBoundary = new TextBox();
-            returnToFirstLab = new Button();
+            textBox_leftBoundary = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            tabPage3 = new TabPage();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -81,6 +85,16 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Завдання 1";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // returnToFirstLab
+            // 
+            returnToFirstLab.Location = new Point(175, 222);
+            returnToFirstLab.Name = "returnToFirstLab";
+            returnToFirstLab.Size = new Size(75, 23);
+            returnToFirstLab.TabIndex = 25;
+            returnToFirstLab.Text = "Закрити";
+            returnToFirstLab.UseVisualStyleBackColor = true;
+            returnToFirstLab.Click += button1_Click_1;
             // 
             // countButton
             // 
@@ -160,6 +174,10 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(sumButton);
+            tabPage2.Controls.Add(button1);
+            tabPage2.Controls.Add(sumLabel);
+            tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(textBox_rigthBoundary);
             tabPage2.Controls.Add(textBox_leftBoundary);
             tabPage2.Controls.Add(label2);
@@ -172,24 +190,57 @@
             tabPage2.Text = "Завдання 2";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // sumButton
             // 
-            tabPage3.Location = new Point(4, 24);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(423, 273);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Завдання 3";
-            tabPage3.UseVisualStyleBackColor = true;
+            sumButton.Location = new Point(6, 154);
+            sumButton.Name = "sumButton";
+            sumButton.Size = new Size(84, 23);
+            sumButton.TabIndex = 7;
+            sumButton.Text = "Обрахувати";
+            sumButton.UseVisualStyleBackColor = true;
+            sumButton.Click += sumButton_Click;
             // 
-            // label1
+            // button1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(7, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(83, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Перше число";
+            button1.Location = new Point(171, 232);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 6;
+            button1.Text = "Закрити";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_2;
+            // 
+            // sumLabel
+            // 
+            sumLabel.AutoSize = true;
+            sumLabel.Location = new Point(202, 120);
+            sumLabel.Name = "sumLabel";
+            sumLabel.Size = new Size(22, 15);
+            sumLabel.TabIndex = 5;
+            sumLabel.Text = "---";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(7, 90);
+            label3.Name = "label3";
+            label3.Size = new Size(189, 45);
+            label3.TabIndex = 4;
+            label3.Text = "Сума всіх чисел на проміжку, які\r\nкратні 17 та при діленні на 4\r\nдають в остачі 2.";
+            // 
+            // textBox_rigthBoundary
+            // 
+            textBox_rigthBoundary.Location = new Point(96, 45);
+            textBox_rigthBoundary.Name = "textBox_rigthBoundary";
+            textBox_rigthBoundary.Size = new Size(100, 23);
+            textBox_rigthBoundary.TabIndex = 3;
+            // 
+            // textBox_leftBoundary
+            // 
+            textBox_leftBoundary.Location = new Point(96, 16);
+            textBox_leftBoundary.Name = "textBox_leftBoundary";
+            textBox_leftBoundary.Size = new Size(100, 23);
+            textBox_leftBoundary.TabIndex = 2;
             // 
             // label2
             // 
@@ -200,29 +251,24 @@
             label2.TabIndex = 1;
             label2.Text = "Друге число";
             // 
-            // textBox_leftBoundary
+            // label1
             // 
-            textBox_leftBoundary.Location = new Point(96, 16);
-            textBox_leftBoundary.Name = "textBox_leftBoundary";
-            textBox_leftBoundary.Size = new Size(100, 23);
-            textBox_leftBoundary.TabIndex = 2;
+            label1.AutoSize = true;
+            label1.Location = new Point(7, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(83, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Перше число";
             // 
-            // textBox_rigthBoundary
+            // tabPage3
             // 
-            textBox_rigthBoundary.Location = new Point(96, 45);
-            textBox_rigthBoundary.Name = "textBox_rigthBoundary";
-            textBox_rigthBoundary.Size = new Size(100, 23);
-            textBox_rigthBoundary.TabIndex = 3;
-            // 
-            // returnToFirstLab
-            // 
-            returnToFirstLab.Location = new Point(175, 222);
-            returnToFirstLab.Name = "returnToFirstLab";
-            returnToFirstLab.Size = new Size(75, 23);
-            returnToFirstLab.TabIndex = 25;
-            returnToFirstLab.Text = "Закрити";
-            returnToFirstLab.UseVisualStyleBackColor = true;
-            returnToFirstLab.Click += button1_Click_1;
+            tabPage3.Location = new Point(4, 24);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(423, 273);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Завдання 3";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // lab2_view
             // 
@@ -260,5 +306,9 @@
         private Label label2;
         private Label label1;
         private Button returnToFirstLab;
+        private Button sumButton;
+        private Button button1;
+        private Label sumLabel;
+        private Label label3;
     }
 }

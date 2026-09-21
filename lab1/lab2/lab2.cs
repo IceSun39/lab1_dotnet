@@ -40,5 +40,27 @@ namespace lab1
             f.Show();
             this.Close();
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Form f = Application.OpenForms[0];
+            f.Show();
+            this.Close();
+        }
+
+        private void sumButton_Click(object sender, EventArgs e)
+        {
+            int num1, num2;
+
+            if(!int.TryParse(textBox_leftBoundary.Text, out num1) ||
+                !int.TryParse(textBox_rigthBoundary.Text, out num2))
+            {
+                MessageBox.Show("Будь ласка, введіть дійсні цілі числа.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new ArgumentException("Invalid input: Please enter valid integers.");
+            }
+
+            lab2_task2_controller controller = new lab2_task2_controller(num1, num2);
+            sumLabel.Text = controller.calculate().ToString();
+        }
     }
 }
