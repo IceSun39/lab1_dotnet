@@ -50,9 +50,28 @@
             label2 = new Label();
             label1 = new Label();
             tabPage3 = new TabPage();
+            button3 = new Button();
+            button2 = new Button();
+            label15 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            lowerBase = new TextBox();
+            height = new TextBox();
+            rightSide = new TextBox();
+            leftSide = new TextBox();
+            upperBase = new TextBox();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            midlineLabel = new Label();
+            areaLabel = new Label();
+            isoscelesLabel = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
+            tabPage3.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -262,6 +281,24 @@
             // 
             // tabPage3
             // 
+            tabPage3.Controls.Add(isoscelesLabel);
+            tabPage3.Controls.Add(areaLabel);
+            tabPage3.Controls.Add(midlineLabel);
+            tabPage3.Controls.Add(button3);
+            tabPage3.Controls.Add(button2);
+            tabPage3.Controls.Add(label15);
+            tabPage3.Controls.Add(label14);
+            tabPage3.Controls.Add(label13);
+            tabPage3.Controls.Add(lowerBase);
+            tabPage3.Controls.Add(height);
+            tabPage3.Controls.Add(rightSide);
+            tabPage3.Controls.Add(leftSide);
+            tabPage3.Controls.Add(upperBase);
+            tabPage3.Controls.Add(label12);
+            tabPage3.Controls.Add(label11);
+            tabPage3.Controls.Add(label10);
+            tabPage3.Controls.Add(label5);
+            tabPage3.Controls.Add(label4);
             tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
@@ -269,6 +306,160 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Завдання 3";
             tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(171, 237);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 17;
+            button3.Text = "Закрити";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(224, 208);
+            button2.Name = "button2";
+            button2.Size = new Size(90, 23);
+            button2.TabIndex = 16;
+            button2.Text = "Обрахувати";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(224, 183);
+            label15.Name = "label15";
+            label15.Size = new Size(90, 15);
+            label15.TabIndex = 12;
+            label15.Text = "Чи рівнобічна?";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(21, 211);
+            label14.Name = "label14";
+            label14.Size = new Size(47, 15);
+            label14.TabIndex = 11;
+            label14.Text = "Площа";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(21, 183);
+            label13.Name = "label13";
+            label13.Size = new Size(82, 15);
+            label13.TabIndex = 10;
+            label13.Text = "Середня лінія";
+            // 
+            // lowerBase
+            // 
+            lowerBase.Location = new Point(146, 143);
+            lowerBase.Name = "lowerBase";
+            lowerBase.Size = new Size(100, 23);
+            lowerBase.TabIndex = 9;
+            // 
+            // height
+            // 
+            height.Location = new Point(146, 77);
+            height.Name = "height";
+            height.Size = new Size(100, 23);
+            height.TabIndex = 8;
+            // 
+            // rightSide
+            // 
+            rightSide.Location = new Point(293, 77);
+            rightSide.Name = "rightSide";
+            rightSide.Size = new Size(100, 23);
+            rightSide.TabIndex = 7;
+            // 
+            // leftSide
+            // 
+            leftSide.Location = new Point(7, 77);
+            leftSide.Name = "leftSide";
+            leftSide.Size = new Size(100, 23);
+            leftSide.TabIndex = 6;
+            // 
+            // upperBase
+            // 
+            upperBase.Location = new Point(146, 5);
+            upperBase.Name = "upperBase";
+            upperBase.Size = new Size(100, 23);
+            upperBase.TabIndex = 5;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(174, 59);
+            label12.Name = "label12";
+            label12.Size = new Size(45, 15);
+            label12.TabIndex = 4;
+            label12.Text = "Висота";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(21, 59);
+            label11.Name = "label11";
+            label11.Size = new Size(78, 15);
+            label11.TabIndex = 3;
+            label11.Text = "Ліва сторона";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(304, 59);
+            label10.Name = "label10";
+            label10.Size = new Size(89, 15);
+            label10.TabIndex = 2;
+            label10.Text = "Права сторона";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(153, 31);
+            label5.Name = "label5";
+            label5.Size = new Size(93, 15);
+            label5.TabIndex = 1;
+            label5.Text = "Вверхня основа";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(153, 125);
+            label4.Name = "label4";
+            label4.Size = new Size(87, 15);
+            label4.TabIndex = 0;
+            label4.Text = "Нижня основа";
+            // 
+            // midlineLabel
+            // 
+            midlineLabel.AutoSize = true;
+            midlineLabel.Location = new Point(109, 183);
+            midlineLabel.Name = "midlineLabel";
+            midlineLabel.Size = new Size(22, 15);
+            midlineLabel.TabIndex = 18;
+            midlineLabel.Text = "---";
+            // 
+            // areaLabel
+            // 
+            areaLabel.AutoSize = true;
+            areaLabel.Location = new Point(109, 212);
+            areaLabel.Name = "areaLabel";
+            areaLabel.Size = new Size(22, 15);
+            areaLabel.TabIndex = 19;
+            areaLabel.Text = "---";
+            // 
+            // isoscelesLabel
+            // 
+            isoscelesLabel.AutoSize = true;
+            isoscelesLabel.Location = new Point(320, 183);
+            isoscelesLabel.Name = "isoscelesLabel";
+            isoscelesLabel.Size = new Size(22, 15);
+            isoscelesLabel.TabIndex = 20;
+            isoscelesLabel.Text = "---";
             // 
             // lab2_view
             // 
@@ -283,6 +474,8 @@
             tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
+            tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -310,5 +503,23 @@
         private Button button1;
         private Label sumLabel;
         private Label label3;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label5;
+        private Label label4;
+        private Button button3;
+        private Button button2;
+        private Label label15;
+        private Label label14;
+        private Label label13;
+        private TextBox lowerBase;
+        private TextBox height;
+        private TextBox rightSide;
+        private TextBox leftSide;
+        private TextBox upperBase;
+        private Label isoscelesLabel;
+        private Label areaLabel;
+        private Label midlineLabel;
     }
 }

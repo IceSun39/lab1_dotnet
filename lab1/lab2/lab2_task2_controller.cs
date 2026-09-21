@@ -13,11 +13,25 @@ namespace lab1.lab2
         private int num2;
         public int sum;
 
+        public int Num1
+        {
+            get { return num1; }
+            set { if (value > this.num2)  throw new ArgumentException("Second number must be greater than or equal to first number."); num1 = value; }
+        }
+
+        public int Num2
+        {
+            get { return num2; }
+            set { num2 = value; }
+        }
+
         public lab2_task2_controller()
         {
             num1 = 0;
             num2 = 0;
         }
+
+        public int Sum { get; private set; }
 
         public lab2_task2_controller(int num1, int num2)
         {

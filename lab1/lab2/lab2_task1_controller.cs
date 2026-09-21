@@ -31,6 +31,8 @@ namespace lab1.lab2
             set { num3 = value; }
         }
 
+        public int Count { get; private set; }
+
         public lab2_task1_controller(int num1, int num2, int num3)
         {   
             this.num1 = num1;

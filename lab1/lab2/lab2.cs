@@ -17,6 +17,7 @@ namespace lab1
         {
             InitializeComponent();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             int num1, num2, num3;
@@ -52,7 +53,7 @@ namespace lab1
         {
             int num1, num2;
 
-            if(!int.TryParse(textBox_leftBoundary.Text, out num1) ||
+            if (!int.TryParse(textBox_leftBoundary.Text, out num1) ||
                 !int.TryParse(textBox_rigthBoundary.Text, out num2))
             {
                 MessageBox.Show("Будь ласка, введіть дійсні цілі числа.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -61,6 +62,37 @@ namespace lab1
 
             lab2_task2_controller controller = new lab2_task2_controller(num1, num2);
             sumLabel.Text = controller.calculate().ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form f = Application.OpenForms[0];
+            f.Show();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int leftSideVal, rightSideVal;
+            int upperBaseVal, lowerBaseVal, heightVal;
+
+            if( !int.TryParse(leftSide.Text, out leftSideVal) ||
+                !int.TryParse(rightSide.Text, out rightSideVal) ||
+                !int.TryParse(upperBase.Text, out upperBaseVal) ||
+                !int.TryParse(lowerBase.Text, out lowerBaseVal) ||
+                !int.TryParse(height.Text, out heightVal))
+            {
+                MessageBox.Show("Будь ласка, введіть дійсні цілі числа.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new ArgumentException("Invalid input: Please enter valid integers.");
+            }
+
+            lab2_task3_controller controller = new lab2_task3_controller(leftSideVal, rightSideVal, upperBaseVal, lowerBaseVal, heightVal);
+            double area = controller.calculateArea();
+            double midline = controller.calculateMidline();
+            bool isIsosceles = controller.checkIsosceles();
+            areaLabel.Text = area.ToString();
+            midlineLabel.Text = midline.ToString();
+            isoscelesLabel.Text = isIsosceles ? "Так" : "Ні";
         }
     }
 }
