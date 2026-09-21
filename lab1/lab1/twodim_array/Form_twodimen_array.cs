@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lab1.lab1.twodim_array;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

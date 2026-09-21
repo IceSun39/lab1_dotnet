@@ -1,3 +1,5 @@
+using lab1.lab1.tabulate;
+
 namespace lab1
 {
     public partial class Form_tabulate : Form
