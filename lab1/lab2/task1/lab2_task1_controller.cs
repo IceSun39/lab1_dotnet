@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab1.lab2.task1
 {
-    internal class lab2_task1_controller
+    public class lab2_task1_controller
     {
         private int num1;
         private int num2;
