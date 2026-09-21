@@ -17,34 +17,12 @@ namespace lab1
         {
             InitializeComponent();
         }
-
-        private void завдання1ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            lab2_task1 f = new lab2_task1();
-            f.Show();
-            this.Hide();
-        }
-
-        private void завдання2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            lab2_task2 f = new lab2_task2();
-            f.Show();
-            this.Hide();
-        }
-
-        private void завдання3ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            lab2_task3 f = new lab2_task3();
-            f.Show();
-            this.Hide();
-        }
-
-        private void countButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             int num1, num2, num3;
 
-            if (!int.TryParse(textBox_firstNum.Text, out num1) || 
-                !int.TryParse(textBox_secondNum.Text, out num2) || 
+            if (!int.TryParse(textBox_firstNum.Text, out num1) ||
+                !int.TryParse(textBox_secondNum.Text, out num2) ||
                 !int.TryParse(textBox_thirdNum.Text, out num3))
             {
                 MessageBox.Show("Будь ласка, введіть дійсні цілі числа.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -53,7 +31,7 @@ namespace lab1
 
             lab2_task1_controller controller = new lab2_task1_controller(num1, num2, num3);
             controller.checkDivisionBy27();
-            countLabel.Text = controller.count.ToString();
+            countLabel.Text = controller.count.ToString();  
         }
     }
 }

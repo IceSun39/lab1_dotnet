@@ -216,27 +216,6 @@
             лабораторнаРобота2ToolStripMenuItem.Text = "Лабораторна робота №2";
             лабораторнаРобота2ToolStripMenuItem.Click += лабораторнаРобота2ToolStripMenuItem_Click;
             // 
-            // завдання1ToolStripMenuItem
-            // 
-            завдання1ToolStripMenuItem.Name = "завдання1ToolStripMenuItem";
-            завдання1ToolStripMenuItem.Size = new Size(180, 22);
-            завдання1ToolStripMenuItem.Text = "Завдання 1";
-            завдання1ToolStripMenuItem.Click += завдання1ToolStripMenuItem_Click;
-            // 
-            // завдання2ToolStripMenuItem
-            // 
-            завдання2ToolStripMenuItem.Name = "завдання2ToolStripMenuItem";
-            завдання2ToolStripMenuItem.Size = new Size(180, 22);
-            завдання2ToolStripMenuItem.Text = "Завдання 2";
-            завдання2ToolStripMenuItem.Click += завдання2ToolStripMenuItem_Click;
-            // 
-            // завдання3ToolStripMenuItem
-            // 
-            завдання3ToolStripMenuItem.Name = "завдання3ToolStripMenuItem";
-            завдання3ToolStripMenuItem.Size = new Size(180, 22);
-            завдання3ToolStripMenuItem.Text = "Завдання 3";
-            завдання3ToolStripMenuItem.Click += завдання3ToolStripMenuItem_Click;
-            // 
             // Form_tabulate
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);

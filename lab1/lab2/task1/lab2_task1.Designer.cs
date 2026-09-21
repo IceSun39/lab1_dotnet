@@ -28,175 +28,177 @@
         /// </summary>
         private void InitializeComponent()
         {
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            countButton = new Button();
+            countLabel = new Label();
+            label6 = new Label();
             textBox_thirdNum = new TextBox();
             textBox_secondNum = new TextBox();
             textBox_firstNum = new TextBox();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            menuStrip1 = new MenuStrip();
-            лабораторнаРобToolStripMenuItem = new ToolStripMenuItem();
-            завдання1ToolStripMenuItem = new ToolStripMenuItem();
-            завдання2ToolStripMenuItem = new ToolStripMenuItem();
-            завдання3ToolStripMenuItem = new ToolStripMenuItem();
-            label4 = new Label();
-            countLabel = new Label();
-            countButton = new Button();
-            menuStrip1.SuspendLayout();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            tabPage2 = new TabPage();
+            tabPage3 = new TabPage();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
             SuspendLayout();
             // 
-            // textBox_thirdNum
+            // tabControl1
             // 
-            textBox_thirdNum.Location = new Point(128, 116);
-            textBox_thirdNum.Name = "textBox_thirdNum";
-            textBox_thirdNum.Size = new Size(100, 23);
-            textBox_thirdNum.TabIndex = 11;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Location = new Point(1, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(431, 301);
+            tabControl1.TabIndex = 16;
             // 
-            // textBox_secondNum
+            // tabPage1
             // 
-            textBox_secondNum.Location = new Point(128, 77);
-            textBox_secondNum.Name = "textBox_secondNum";
-            textBox_secondNum.Size = new Size(100, 23);
-            textBox_secondNum.TabIndex = 10;
+            tabPage1.Controls.Add(countButton);
+            tabPage1.Controls.Add(countLabel);
+            tabPage1.Controls.Add(label6);
+            tabPage1.Controls.Add(textBox_thirdNum);
+            tabPage1.Controls.Add(textBox_secondNum);
+            tabPage1.Controls.Add(textBox_firstNum);
+            tabPage1.Controls.Add(label7);
+            tabPage1.Controls.Add(label8);
+            tabPage1.Controls.Add(label9);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(423, 273);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Завдання 1";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox_firstNum
+            // countButton
             // 
-            textBox_firstNum.Location = new Point(128, 34);
-            textBox_firstNum.Name = "textBox_firstNum";
-            textBox_firstNum.Size = new Size(100, 23);
-            textBox_firstNum.TabIndex = 9;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(39, 116);
-            label3.Name = "label3";
-            label3.Size = new Size(75, 15);
-            label3.TabIndex = 8;
-            label3.Text = "Третє число";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(39, 77);
-            label2.Name = "label2";
-            label2.Size = new Size(76, 15);
-            label2.TabIndex = 7;
-            label2.Text = "Друге число";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(39, 37);
-            label1.Name = "label1";
-            label1.Size = new Size(83, 15);
-            label1.TabIndex = 6;
-            label1.Text = "Перше число";
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { лабораторнаРобToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 12;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // лабораторнаРобToolStripMenuItem
-            // 
-            лабораторнаРобToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { завдання1ToolStripMenuItem, завдання2ToolStripMenuItem, завдання3ToolStripMenuItem });
-            лабораторнаРобToolStripMenuItem.Name = "лабораторнаРобToolStripMenuItem";
-            лабораторнаРобToolStripMenuItem.Size = new Size(156, 20);
-            лабораторнаРобToolStripMenuItem.Text = "Лабораторна робота №2";
-            // 
-            // завдання1ToolStripMenuItem
-            // 
-            завдання1ToolStripMenuItem.Name = "завдання1ToolStripMenuItem";
-            завдання1ToolStripMenuItem.Size = new Size(134, 22);
-            завдання1ToolStripMenuItem.Text = "Завдання 1";
-            завдання1ToolStripMenuItem.Click += завдання1ToolStripMenuItem_Click;
-            // 
-            // завдання2ToolStripMenuItem
-            // 
-            завдання2ToolStripMenuItem.Name = "завдання2ToolStripMenuItem";
-            завдання2ToolStripMenuItem.Size = new Size(134, 22);
-            завдання2ToolStripMenuItem.Text = "Завдання 2";
-            завдання2ToolStripMenuItem.Click += завдання2ToolStripMenuItem_Click;
-            // 
-            // завдання3ToolStripMenuItem
-            // 
-            завдання3ToolStripMenuItem.Name = "завдання3ToolStripMenuItem";
-            завдання3ToolStripMenuItem.Size = new Size(134, 22);
-            завдання3ToolStripMenuItem.Text = "Завдання 3";
-            завдання3ToolStripMenuItem.Click += завдання3ToolStripMenuItem_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(39, 155);
-            label4.Name = "label4";
-            label4.Size = new Size(120, 15);
-            label4.TabIndex = 13;
-            label4.Text = "Кількість кратних 27:";
+            countButton.Location = new Point(46, 161);
+            countButton.Name = "countButton";
+            countButton.Size = new Size(83, 23);
+            countButton.TabIndex = 24;
+            countButton.Text = "Обрахувати";
+            countButton.UseVisualStyleBackColor = true;
+            countButton.Click += button1_Click;
             // 
             // countLabel
             // 
             countLabel.AutoSize = true;
-            countLabel.Location = new Point(165, 155);
+            countLabel.Location = new Point(172, 132);
             countLabel.Name = "countLabel";
             countLabel.Size = new Size(22, 15);
-            countLabel.TabIndex = 14;
+            countLabel.TabIndex = 23;
             countLabel.Text = "---";
             // 
-            // countButton
+            // label6
             // 
-            countButton.Location = new Point(39, 184);
-            countButton.Name = "countButton";
-            countButton.Size = new Size(83, 23);
-            countButton.TabIndex = 15;
-            countButton.Text = "Обрахувати";
-            countButton.UseVisualStyleBackColor = true;
-            countButton.Click += countButton_Click;
+            label6.AutoSize = true;
+            label6.Location = new Point(46, 132);
+            label6.Name = "label6";
+            label6.Size = new Size(120, 15);
+            label6.TabIndex = 22;
+            label6.Text = "Кількість кратних 27:";
+            // 
+            // textBox_thirdNum
+            // 
+            textBox_thirdNum.Location = new Point(135, 93);
+            textBox_thirdNum.Name = "textBox_thirdNum";
+            textBox_thirdNum.Size = new Size(100, 23);
+            textBox_thirdNum.TabIndex = 21;
+            // 
+            // textBox_secondNum
+            // 
+            textBox_secondNum.Location = new Point(135, 54);
+            textBox_secondNum.Name = "textBox_secondNum";
+            textBox_secondNum.Size = new Size(100, 23);
+            textBox_secondNum.TabIndex = 20;
+            // 
+            // textBox_firstNum
+            // 
+            textBox_firstNum.Location = new Point(135, 11);
+            textBox_firstNum.Name = "textBox_firstNum";
+            textBox_firstNum.Size = new Size(100, 23);
+            textBox_firstNum.TabIndex = 19;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(46, 93);
+            label7.Name = "label7";
+            label7.Size = new Size(75, 15);
+            label7.TabIndex = 18;
+            label7.Text = "Третє число";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(46, 54);
+            label8.Name = "label8";
+            label8.Size = new Size(76, 15);
+            label8.TabIndex = 17;
+            label8.Text = "Друге число";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(46, 14);
+            label9.Name = "label9";
+            label9.Size = new Size(83, 15);
+            label9.TabIndex = 16;
+            label9.Text = "Перше число";
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(423, 273);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Завдання 2";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            tabPage3.Location = new Point(4, 24);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(423, 273);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Завдання 3";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // lab2_task1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(countButton);
-            Controls.Add(countLabel);
-            Controls.Add(label4);
-            Controls.Add(textBox_thirdNum);
-            Controls.Add(textBox_secondNum);
-            Controls.Add(textBox_firstNum);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            ClientSize = new Size(431, 304);
+            Controls.Add(tabControl1);
             Name = "lab2_task1";
             Text = "lab2_task1";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private Button countButton;
+        private Label countLabel;
+        private Label label6;
         private TextBox textBox_thirdNum;
         private TextBox textBox_secondNum;
         private TextBox textBox_firstNum;
-        private Label label3;
-        private Label label2;
-        private Label label1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem лабораторнаРобToolStripMenuItem;
-        private ToolStripMenuItem завдання1ToolStripMenuItem;
-        private ToolStripMenuItem завдання2ToolStripMenuItem;
-        private ToolStripMenuItem завдання3ToolStripMenuItem;
-        private Label label4;
-        private Label countLabel;
-        private Button countButton;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private TabPage tabPage2;
+        private TabPage tabPage3;
     }
 }
