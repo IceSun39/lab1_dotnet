@@ -48,6 +48,10 @@
             роботаЗМасивамиToolStripMenuItem = new ToolStripMenuItem();
             одновимірніМасивиToolStripMenuItem = new ToolStripMenuItem();
             двовимірніМасивиToolStripMenuItem = new ToolStripMenuItem();
+            лабораторнаРобота2ToolStripMenuItem = new ToolStripMenuItem();
+            завдання1ToolStripMenuItem = new ToolStripMenuItem();
+            завдання2ToolStripMenuItem = new ToolStripMenuItem();
+            завдання3ToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             menuStrip1.SuspendLayout();
@@ -175,7 +179,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { роботаЗМасивамиToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { роботаЗМасивамиToolStripMenuItem, лабораторнаРобота2ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -204,6 +208,35 @@
             двовимірніМасивиToolStripMenuItem.Text = "Двовимірні масиви";
             двовимірніМасивиToolStripMenuItem.Click += двовимірніМасивиToolStripMenuItem_Click;
             // 
+            // лабораторнаРобота2ToolStripMenuItem
+            // 
+            лабораторнаРобота2ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { завдання1ToolStripMenuItem, завдання2ToolStripMenuItem, завдання3ToolStripMenuItem });
+            лабораторнаРобота2ToolStripMenuItem.Name = "лабораторнаРобота2ToolStripMenuItem";
+            лабораторнаРобота2ToolStripMenuItem.Size = new Size(156, 20);
+            лабораторнаРобота2ToolStripMenuItem.Text = "Лабораторна робота №2";
+            лабораторнаРобота2ToolStripMenuItem.Click += лабораторнаРобота2ToolStripMenuItem_Click;
+            // 
+            // завдання1ToolStripMenuItem
+            // 
+            завдання1ToolStripMenuItem.Name = "завдання1ToolStripMenuItem";
+            завдання1ToolStripMenuItem.Size = new Size(180, 22);
+            завдання1ToolStripMenuItem.Text = "Завдання 1";
+            завдання1ToolStripMenuItem.Click += завдання1ToolStripMenuItem_Click;
+            // 
+            // завдання2ToolStripMenuItem
+            // 
+            завдання2ToolStripMenuItem.Name = "завдання2ToolStripMenuItem";
+            завдання2ToolStripMenuItem.Size = new Size(180, 22);
+            завдання2ToolStripMenuItem.Text = "Завдання 2";
+            завдання2ToolStripMenuItem.Click += завдання2ToolStripMenuItem_Click;
+            // 
+            // завдання3ToolStripMenuItem
+            // 
+            завдання3ToolStripMenuItem.Name = "завдання3ToolStripMenuItem";
+            завдання3ToolStripMenuItem.Size = new Size(180, 22);
+            завдання3ToolStripMenuItem.Text = "Завдання 3";
+            завдання3ToolStripMenuItem.Click += завдання3ToolStripMenuItem_Click;
+            // 
             // Form_tabulate
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -223,7 +256,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form_tabulate";
-            Text = "Form1";
+            Text = "Табуляція функції";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
@@ -252,5 +285,9 @@
         private ToolStripMenuItem роботаЗМасивамиToolStripMenuItem;
         private ToolStripMenuItem одновимірніМасивиToolStripMenuItem;
         private ToolStripMenuItem двовимірніМасивиToolStripMenuItem;
+        private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem;
+        private ToolStripMenuItem завдання1ToolStripMenuItem;
+        private ToolStripMenuItem завдання2ToolStripMenuItem;
+        private ToolStripMenuItem завдання3ToolStripMenuItem;
     }
 }
