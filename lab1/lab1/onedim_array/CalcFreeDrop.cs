@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab1
+namespace lab1.lab1.onedim_array
 {
     internal class CalcFreeDrop
     {

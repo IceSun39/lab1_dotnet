@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lab1.lab2.task1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

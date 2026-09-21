@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab1
+namespace lab1.lab2.task1
 {
-    internal class lab2_task1_controller
+    public class lab2_task1_controller
     {
         private int num1;
         private int num2;
@@ -40,16 +40,16 @@ namespace lab1
 
         public lab2_task1_controller()
         {
-            this.num1 = 0;
-            this.num2 = 0;
-            this.num3 = 0;
+            num1 = 0;
+            num2 = 0;
+            num3 = 0;
         }
 
         public lab2_task1_controller(int num)
         {
-            this.num1 = num;
-            this.num2 = num;
-            this.num3 = num;
+            num1 = num;
+            num2 = num;
+            num3 = num;
         }
 
         public int checkDivisionBy27()

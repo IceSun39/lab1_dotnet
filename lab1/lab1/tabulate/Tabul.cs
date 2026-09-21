@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab1
+namespace lab1.lab1.tabulate
 {
     internal class Tabul
     {
@@ -18,7 +18,7 @@ namespace lab1
 
         private double f2(double x)
         {
-            return (x * x * x) * Math.Cos(x + 2);
+            return x * x * x * Math.Cos(x + 2);
         }
 
         private double f3(double x)
