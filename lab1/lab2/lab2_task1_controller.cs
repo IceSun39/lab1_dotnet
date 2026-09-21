@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab1.lab2.task1
+namespace lab1.lab2
 {
     public class lab2_task1_controller
     {

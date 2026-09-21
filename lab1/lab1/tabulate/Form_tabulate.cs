@@ -96,7 +96,7 @@ namespace lab1
 
         private void лабораторнаРобота2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lab2_task1 f = new lab2_task1();
+            lab2_view f = new lab2_view();
             f.Show();
             this.Hide();
         }

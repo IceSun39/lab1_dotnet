@@ -1,6 +1,6 @@
 ﻿namespace lab1
 {
-    partial class lab2_task1
+    partial class lab2_view
     {
         /// <summary>
         /// Required designer variable.

@@ -1,4 +1,4 @@
-﻿using lab1.lab2.task1;
+﻿using lab1.lab2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace lab1
 {
-    public partial class lab2_task1 : Form
+    public partial class lab2_view : Form
     {
-        public lab2_task1()
+        public lab2_view()
         {
             InitializeComponent();
         }

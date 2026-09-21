@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using lab1.lab2.task1;
+using lab1.lab2;
 
 namespace DivisionBy27_Test
 {
