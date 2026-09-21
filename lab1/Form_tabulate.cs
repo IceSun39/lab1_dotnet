@@ -91,5 +91,31 @@ namespace lab1
         {
 
         }
+
+        private void лабораторна–обота2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void завданн€1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lab2_task1 f = new lab2_task1();
+            f.Show();
+            this.Hide();
+        }
+
+        private void завданн€2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lab2_task2 f = new lab2_task2();
+            f.Show();
+            this.Hide();
+        }
+
+        private void завданн€3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lab2_task3 f = new lab2_task3();
+            f.Show();
+            this.Hide();
+        }
     }
 }
