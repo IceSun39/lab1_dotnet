@@ -38,6 +38,8 @@
             button_find_duplicate = new Button();
             label1 = new Label();
             label_result = new Label();
+            label2 = new Label();
+            labelMin = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -133,11 +135,32 @@
             label_result.TabIndex = 9;
             label_result.Click += label2_Click_1;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(270, 319);
+            label2.Name = "label2";
+            label2.Size = new Size(58, 15);
+            label2.TabIndex = 10;
+            label2.Text = "Мінімум:";
+            label2.Click += label2_Click_2;
+            // 
+            // labelMin
+            // 
+            labelMin.AutoSize = true;
+            labelMin.Location = new Point(363, 319);
+            labelMin.Name = "labelMin";
+            labelMin.Size = new Size(22, 15);
+            labelMin.TabIndex = 11;
+            labelMin.Text = "---";
+            // 
             // Form_twodimen_array
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelMin);
+            Controls.Add(label2);
             Controls.Add(label_result);
             Controls.Add(label1);
             Controls.Add(button_find_duplicate);
@@ -168,5 +191,7 @@
         private Button button_find_duplicate;
         private Label label1;
         private Label label_result;
+        private Label label2;
+        private Label labelMin;
     }
 }

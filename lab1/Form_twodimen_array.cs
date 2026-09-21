@@ -53,7 +53,7 @@ namespace lab1
             fd.Rows = Convert.ToInt32(textBox_rows.Text);
             fd.Cols = Convert.ToInt32(textBox_cols.Text);
 
-            if( fd.Rows <= 0 || fd.Rows > 3)
+            if (fd.Rows <= 0 || fd.Rows > 3)
             {
                 MessageBox.Show("Кількість рядків повинна бути від 1 до 3!", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -79,13 +79,20 @@ namespace lab1
             label_result.Text = "";
         }
 
-      
+
         private void button_find_duplicate_Click(object sender, EventArgs e)
         {
             var (index00, index01, index10, index11) = fd.findDuplicateInArray();
+            int minValue = fd.findMin();
             dataGridView1.Rows[index00].Cells[index01].Style.BackColor = Color.Red;
             dataGridView1.Rows[index10].Cells[index11].Style.BackColor = Color.Red;
             label_result.Text = $"Дублікати знайдено: ({index00}, {index01}) та ({index10}, {index11})";
+            labelMin.Text = $"Мінімальне значення в масиві: {minValue}";
+        }
+
+        private void label2_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -89,5 +89,21 @@ namespace lab1
 
             return (-1, -1, -1, -1);
         }
+
+        public int findMin()
+        {
+            int min = array[0, 0];
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    if (array[i, j] < min)
+                    {
+                        min = array[i, j];
+                    }
+                }
+            }
+            return min;
+        }
     }
 }
