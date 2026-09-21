@@ -41,8 +41,14 @@
             label9 = new Label();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
+            label1 = new Label();
+            label2 = new Label();
+            textBox_leftBoundary = new TextBox();
+            textBox_rigthBoundary = new TextBox();
+            returnToFirstLab = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -58,6 +64,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(returnToFirstLab);
             tabPage1.Controls.Add(countButton);
             tabPage1.Controls.Add(countLabel);
             tabPage1.Controls.Add(label6);
@@ -153,6 +160,10 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(textBox_rigthBoundary);
+            tabPage2.Controls.Add(textBox_leftBoundary);
+            tabPage2.Controls.Add(label2);
+            tabPage2.Controls.Add(label1);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -171,17 +182,61 @@
             tabPage3.Text = "Завдання 3";
             tabPage3.UseVisualStyleBackColor = true;
             // 
-            // lab2_task1
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(7, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(83, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Перше число";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(7, 48);
+            label2.Name = "label2";
+            label2.Size = new Size(76, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Друге число";
+            // 
+            // textBox_leftBoundary
+            // 
+            textBox_leftBoundary.Location = new Point(96, 16);
+            textBox_leftBoundary.Name = "textBox_leftBoundary";
+            textBox_leftBoundary.Size = new Size(100, 23);
+            textBox_leftBoundary.TabIndex = 2;
+            // 
+            // textBox_rigthBoundary
+            // 
+            textBox_rigthBoundary.Location = new Point(96, 45);
+            textBox_rigthBoundary.Name = "textBox_rigthBoundary";
+            textBox_rigthBoundary.Size = new Size(100, 23);
+            textBox_rigthBoundary.TabIndex = 3;
+            // 
+            // returnToFirstLab
+            // 
+            returnToFirstLab.Location = new Point(175, 222);
+            returnToFirstLab.Name = "returnToFirstLab";
+            returnToFirstLab.Size = new Size(75, 23);
+            returnToFirstLab.TabIndex = 25;
+            returnToFirstLab.Text = "Закрити";
+            returnToFirstLab.UseVisualStyleBackColor = true;
+            returnToFirstLab.Click += button1_Click_1;
+            // 
+            // lab2_view
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(431, 304);
             Controls.Add(tabControl1);
-            Name = "lab2_task1";
+            Name = "lab2_view";
             Text = "lab2_task1";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -200,5 +255,10 @@
         private Label label9;
         private TabPage tabPage2;
         private TabPage tabPage3;
+        private TextBox textBox_rigthBoundary;
+        private TextBox textBox_leftBoundary;
+        private Label label2;
+        private Label label1;
+        private Button returnToFirstLab;
     }
 }

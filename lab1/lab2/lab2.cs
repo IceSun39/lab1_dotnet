@@ -31,7 +31,14 @@ namespace lab1
 
             lab2_task1_controller controller = new lab2_task1_controller(num1, num2, num3);
             controller.checkDivisionBy27();
-            countLabel.Text = controller.count.ToString();  
+            countLabel.Text = controller.count.ToString();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form f = Application.OpenForms[0];
+            f.Show();
+            this.Close();
         }
     }
 }
